@@ -675,13 +675,13 @@ const Dex = new class implements ModdedDex {
 		}
 
 		if (spriteData.isFrontSprite) {
-			if(name == 'pigardoom') {
+			if(name == 'pigardoom' || name == 'magopop' || name == 'gymbrock' || name == 'conchity' || name == 'ironjuan') {
 				spriteData.url = 'http://192.168.0.29:80/sprites/teca-tc/'+name+'front.png';
 				return spriteData;
 			}
 		}
 		else{
-			if(name == 'pigardoom') {
+			if(name == 'pigardoom' || name == 'magopop' || name == 'gymbrock' || name == 'conchity' || name == 'ironjuan') {
 				spriteData.url = 'http://192.168.0.29:80/sprites/teca-tc/'+name+'back.png';
 				return spriteData;
 			}
@@ -735,6 +735,10 @@ const Dex = new class implements ModdedDex {
 		// @ts-ignore
 		if (pokemon?.species) id = toID(pokemon.species);
 		if (id === 'pigardoom') id = 'emboar';
+		if (id === 'conchity') id = 'delphox';
+		if (id === 'magopop') id = 'alakazam';
+		if (id === 'ironjuan') id = 'kommoo';
+		if (id === 'gymbrock') id = 'buzzwole';
 		// @ts-ignore
 		if (pokemon?.volatiles?.formechange && !pokemon.volatiles.transform) {
 			// @ts-ignore
@@ -792,7 +796,7 @@ const Dex = new class implements ModdedDex {
 		else if (gen <= 4 && species.gen <= 4) spriteData.spriteDir = 'sprites/gen4';
 		spriteData.x = 10;
 		spriteData.y = 5;
-		if (id === 'pigardoom') {
+		if (id === 'pigardoom' || id === 'magopop' || id === 'gymbrock' || id === 'conchity' || id === 'ironjuan') {
 			spriteData.spriteDir = 'teca-tc/';
 		}
 		return spriteData;
@@ -803,7 +807,7 @@ const Dex = new class implements ModdedDex {
 		let id = toID(pokemon.species);
 		const data = this.getTeambuilderSpriteData(pokemon, gen);
 		const shiny = (data.shiny ? '-shiny' : '');
-		if (id === 'pigardoom' ){
+		if (id === 'pigardoom' || id === 'magopop' || id === 'gymbrock' || id === 'conchity' || id === 'ironjuan' ){
 			return 'background-image:url(http://192.168.0.29:80/sprites/teca-tc/'+id+'teambuilder.png);background-position:' + data.x + 'px ' + data.y + 'px;background-repeat:no-repeat';
 		}
 		return 'background-image:url(' + Dex.resourcePrefix + data.spriteDir + shiny + '/' + data.spriteid + '.png);background-position:' + data.x + 'px ' + data.y + 'px;background-repeat:no-repeat';
