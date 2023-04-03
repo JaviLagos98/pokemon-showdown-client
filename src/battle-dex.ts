@@ -669,6 +669,19 @@ const Dex = new class implements ModdedDex {
 			spriteData.y += -11;
 		}
 
+		if (spriteData.isFrontSprite) {
+			if(name == 'pigardoom') {
+				spriteData.url = 'http://192.168.0.29:80/sprites/teca-tc/'+name+'front.png';
+				return spriteData;
+			}
+		}
+		else{
+			if(name == 'pigardoom') {
+				spriteData.url = 'http://192.168.0.29:80/sprites/teca-tc/'+name+'back.png';
+				return spriteData;
+			}
+		}
+
 		return spriteData;
 	}
 
@@ -716,6 +729,7 @@ const Dex = new class implements ModdedDex {
 		if (pokemon?.speciesForme) id = toID(pokemon.speciesForme);
 		// @ts-ignore
 		if (pokemon?.species) id = toID(pokemon.species);
+		if (id === 'pigardoom') id = 'emboar';
 		// @ts-ignore
 		if (pokemon?.volatiles?.formechange && !pokemon.volatiles.transform) {
 			// @ts-ignore
@@ -773,13 +787,20 @@ const Dex = new class implements ModdedDex {
 		else if (gen <= 4 && species.gen <= 4) spriteData.spriteDir = 'sprites/gen4';
 		spriteData.x = 10;
 		spriteData.y = 5;
+		if (id === 'pigardoom') {
+			spriteData.spriteDir = 'teca-tc/';
+		}
 		return spriteData;
 	}
 
 	getTeambuilderSprite(pokemon: any, gen: number = 0) {
 		if (!pokemon) return '';
+		let id = toID(pokemon.species);
 		const data = this.getTeambuilderSpriteData(pokemon, gen);
 		const shiny = (data.shiny ? '-shiny' : '');
+		if (id === 'pigardoom' ){
+			return 'background-image:url(http://192.168.0.29:80/sprites/teca-tc/'+id+'teambuilder.png);background-position:' + data.x + 'px ' + data.y + 'px;background-repeat:no-repeat';
+		}
 		return 'background-image:url(' + Dex.resourcePrefix + data.spriteDir + shiny + '/' + data.spriteid + '.png);background-position:' + data.x + 'px ' + data.y + 'px;background-repeat:no-repeat';
 	}
 

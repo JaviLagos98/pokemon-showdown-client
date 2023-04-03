@@ -1,6 +1,8 @@
-/sprites/
+/sprites/*
+!/sprites/teca-tc/
 /audio/
-/config/
+/config/*
+!/config/src/battle-dex.ts
 /index.php
 /index.html
 /preactalpha.html
