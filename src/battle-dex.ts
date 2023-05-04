@@ -678,7 +678,7 @@ const Dex = new class implements ModdedDex {
 			if(name == 'pigardoom' || name == 'magopop' || name == 'magopop-mega' || name == 'gymbrock' || name == 'conchity' || name == 'ironjuan' || name == 'prendeporros' || name == 'prendeporros-mega' || name == 'pinkchariot' || name == 'trece' || name == 'trece-mega'
 			|| name == 'acerakion' || name == 'andyb' || name == 'badgyal' || name == 'lola' || name == 'dualipa' || name == 'michi' || name == 'punki' || name == 'naruto'
 			|| name == 'balat' || name == 'behel' || name == 'croqueto' || name == 'hyojinmaru' || name == 'jormungand' || name == 'jormungand-mega' || name == 'mecadennis' || name == 'pikadont' || name == 'nessie' 
-			|| name == 'yoloking' || name == 'yoloking-mega' || name == 'rayguazas' || name == 'windu' || name == 'windu-mega' || name == 'nosferatu' || name == 'hobogoblin' || name == 'rocodromer' || name == 'agentesn' || name == 'charizardnt' || name == 'charizardont-mega' 
+			|| name == 'yoloking' || name == 'yoloking-mega' || name == 'rayguazas' || name == 'windu' || name == 'windu-mega' || name == 'nosferatu' || name == 'hobogoblin' || name == 'rocodromer' || name == 'agentesn' || name == 'charizardnt' || name == 'charizardnt-mega' 
 			|| name == 'camilo' || name == 'camilo-mega' || name == 'crazycuac' || name == 'juanmagan' || name == 'tejero' || name == 'pringle' || name == 'chicote' || name == 'megachonk' || name == 'aitana' 
 			|| name == 'pelele' || name == 'mogikarp' || name == 'goro' || name == 'algo' || name == 'jorginna' || name == 'patrisio' || name == 'acab' || name == 'adolf' || name == 'acab-mega'
 			) {
@@ -690,7 +690,7 @@ const Dex = new class implements ModdedDex {
 			if(name == 'pigardoom' || name == 'magopop' || name == 'magopop-mega' || name == 'gymbrock' || name == 'conchity' || name == 'ironjuan' || name == 'prendeporros' || name == 'prendeporros-mega' || name == 'pinkchariot' || name == 'trece' || name == 'trece-mega'
 			|| name == 'acerakion' || name == 'andyb' || name == 'badgyal' || name == 'lola' || name == 'dualipa' || name == 'michi' || name == 'punki' || name == 'naruto'
 			|| name == 'balat' || name == 'behel' || name == 'croqueto' || name == 'hyojinmaru' || name == 'jormungand' || name == 'jormungand-mega' || name == 'mecadennis' || name == 'pikadont' || name == 'nessie' 
-			|| name == 'yoloking' || name == 'yoloking-mega' || name == 'rayguazas' || name == 'windu' || name == 'windu-mega' || name == 'nosferatu' || name == 'hobogoblin' || name == 'rocodromer' || name == 'agentesn' || name == 'charizardnt' || name == 'charizardont-mega' 
+			|| name == 'yoloking' || name == 'yoloking-mega' || name == 'rayguazas' || name == 'windu' || name == 'windu-mega' || name == 'nosferatu' || name == 'hobogoblin' || name == 'rocodromer' || name == 'agentesn' || name == 'charizardnt' || name == 'charizardnt-mega' 
 			|| name == 'camilo' || name == 'camilo-mega' || name == 'crazycuac' || name == 'juanmagan' || name == 'tejero' || name == 'pringle' || name == 'chicote' || name == 'megachonk' || name == 'aitana' 
 			|| name == 'pelele' || name == 'mogikarp' || name == 'goro' || name == 'algo' || name == 'jorginna' || name == 'patrisio' || name == 'acab' || name == 'adolf' || name == 'acab-mega') {
 				spriteData.url = 'http://192.168.0.25:80/sprites/teca-tc/'+name+'back.png';
