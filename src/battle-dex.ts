@@ -564,7 +564,7 @@ const Dex = new class implements ModdedDex {
 			let baseSpeciesid = toID(species.baseSpecies);
 			spriteData.cryurl = 'audio/cries/' + baseSpeciesid;
 			let formeid = species.formeid;
-			if (species.isMega || formeid && (
+			if (species.is-mega || formeid && (
 				formeid === '-crowned' ||
 				formeid === '-eternal' ||
 				formeid === '-eternamax' ||
@@ -675,25 +675,25 @@ const Dex = new class implements ModdedDex {
 		}
 
 		if (spriteData.isFrontSprite) {
-			if(name == 'pigardoom' || name == 'magopop' || name == 'magopopmega' || name == 'gymbrock' || name == 'conchity' || name == 'ironjuan' || name == 'prendeporros' || name == 'prendeporrosmega' || name == 'pinkchariot' || name == 'trece' || name == 'trecemega' || name == 'gloovoo'
+			if(name == 'pigardoom' || name == 'magopop' || name == 'magopop-mega' || name == 'gymbrock' || name == 'conchity' || name == 'ironjuan' || name == 'prendeporros' || name == 'prendeporros-mega' || name == 'pinkchariot' || name == 'trece' || name == 'trece-mega' || name == 'gloovoo'
 			|| name == 'acerakion' || name == 'andyb' || name == 'badgyal' || name == 'lola' || name == 'dualipa' || name == 'michi' || name == 'punki' || name == 'naruto'
-			|| name == 'balat' || name == 'behel' || name == 'croqueto' || name == 'hyojinmaru' || name == 'jormungand' || name == 'jormungandmega' || name == 'mecadennis' || name == 'pikachudoubt' || name == 'nessie' 
-			|| name == 'yoloking' || name == 'yolokingmega' || name == 'rayguazas' || name == 'windu' || name == 'windumega' || name == 'nosferatu' || name == 'hobogoblin' || name == 'rocodromer' || name == 'agentesn' || name == 'charizardnt' || name == 'charizardontmega' 
-			|| name == 'camilo' || name == 'camilomega' || name == 'crazycuac' || name == 'juanmagan' || name == 'tejero' || name == 'pringle' || name == 'chicote' || name == 'megachonk' || name == 'aitana' 
-			|| name == 'pelele' || name == 'mogikarp' || name == 'goro' || name == 'algo' || name == 'jorginna' || name == 'patrisio' || name == 'acab' || name == 'adolf' || name == 'acabmega'
+			|| name == 'balat' || name == 'behel' || name == 'croqueto' || name == 'hyojinmaru' || name == 'jormungand' || name == 'jormungand-mega' || name == 'mecadennis' || name == 'pikadont' || name == 'nessie' 
+			|| name == 'yoloking' || name == 'yoloking-mega' || name == 'rayguazas' || name == 'windu' || name == 'windu-mega' || name == 'nosferatu' || name == 'hobogoblin' || name == 'rocodromer' || name == 'agentesn' || name == 'charizardnt' || name == 'charizardnt-mega' 
+			|| name == 'camilo' || name == 'camilo-mega' || name == 'crazycuac' || name == 'juanmagan' || name == 'tejero' || name == 'pringle' || name == 'chicote' || name == 'megachonk' || name == 'aitana' 
+			|| name == 'pelele' || name == 'mogikarp' || name == 'goro' || name == 'algo' || name == 'jorginna' || name == 'patrisio' || name == 'acab' || name == 'adolf' || name == 'acab-mega'
 			) {
-				spriteData.url = 'http://192.168.0.19:80/sprites/teca-tc/'+name+'front.png';
+				spriteData.url = 'http://82.165.3.33:80/sprites/teca-tc/'+name+'front.png';
 				return spriteData;
 			}
 		}
 		else{
-			if(name == 'pigardoom' || name == 'magopop' || name == 'magopopmega' || name == 'gymbrock' || name == 'conchity' || name == 'ironjuan' || name == 'prendeporros' || name == 'prendeporrosmega' || name == 'pinkchariot' || name == 'trece' || name == 'trecemega' || name == 'gloovoo'
+			if(name == 'pigardoom' || name == 'magopop' || name == 'magopop-mega' || name == 'gymbrock' || name == 'conchity' || name == 'ironjuan' || name == 'prendeporros' || name == 'prendeporros-mega' || name == 'pinkchariot' || name == 'trece' || name == 'trece-mega' || name == 'gloovoo'
 			|| name == 'acerakion' || name == 'andyb' || name == 'badgyal' || name == 'lola' || name == 'dualipa' || name == 'michi' || name == 'punki' || name == 'naruto'
-			|| name == 'balat' || name == 'behel' || name == 'croqueto' || name == 'hyojinmaru' || name == 'jormungand' || name == 'jormungandmega' || name == 'mecadennis' || name == 'pikachudoubt' || name == 'nessie' 
-			|| name == 'yoloking' || name == 'yolokingmega' || name == 'rayguazas' || name == 'windu' || name == 'windumega' || name == 'nosferatu' || name == 'hobogoblin' || name == 'rocodromer' || name == 'agentesn' || name == 'charizardnt' || name == 'charizardontmega' 
-			|| name == 'camilo' || name == 'camilomega' || name == 'crazycuac' || name == 'juanmagan' || name == 'tejero' || name == 'pringle' || name == 'chicote' || name == 'megachonk' || name == 'aitana' 
-			|| name == 'pelele' || name == 'mogikarp' || name == 'goro' || name == 'algo' || name == 'jorginna' || name == 'patrisio' || name == 'acab' || name == 'adolf' || name == 'acabmega') {
-				spriteData.url = 'http://192.168.0.19:80/sprites/teca-tc/'+name+'back.png';
+			|| name == 'balat' || name == 'behel' || name == 'croqueto' || name == 'hyojinmaru' || name == 'jormungand' || name == 'jormungand-mega' || name == 'mecadennis' || name == 'pikadont' || name == 'nessie' 
+			|| name == 'yoloking' || name == 'yoloking-mega' || name == 'rayguazas' || name == 'windu' || name == 'windu-mega' || name == 'nosferatu' || name == 'hobogoblin' || name == 'rocodromer' || name == 'agentesn' || name == 'charizardnt' || name == 'charizardnt-mega' 
+			|| name == 'camilo' || name == 'camilo-mega' || name == 'crazycuac' || name == 'juanmagan' || name == 'tejero' || name == 'pringle' || name == 'chicote' || name == 'megachonk' || name == 'aitana' 
+			|| name == 'pelele' || name == 'mogikarp' || name == 'goro' || name == 'algo' || name == 'jorginna' || name == 'patrisio' || name == 'acab' || name == 'adolf' || name == 'acab-mega') {
+				spriteData.url = 'http://82.165.3.33:80/sprites/teca-tc/'+name+'back.png';
 				return spriteData;
 			}
 		}
@@ -772,8 +772,8 @@ const Dex = new class implements ModdedDex {
 		if (id === 'hyojinmaru') id = 'mamoswine';
 		if (id === 'jormungand') id = 'steelix';
 		if (id === 'jormungandmega') id = 'steelixmega';
-		if (id === 'mechadennis') id = 'emboar';
-		if (id === 'pikachudoubt') id = 'charizard';
+		if (id === 'mecadennis') id = 'emboar';
+		if (id === 'pikadont') id = 'charizard';
 		if (id === 'yoloking') id = 'venusaur';
 		if (id === 'yolokingmega') id = 'venusaurmega';
 		if (id === 'rayguazas') id = 'rayquaza';
@@ -803,6 +803,7 @@ const Dex = new class implements ModdedDex {
 		if (id === 'acab') id = 'blaziken';
 		if (id === 'acabmega') id = 'blazikenmega';
 		if (id === 'adolf') id = 'probopass';
+		if (id === 'pelele') id = 'rayquaza';
 
 
 		// @ts-ignore
@@ -849,7 +850,7 @@ const Dex = new class implements ModdedDex {
 			} else if (id === 'garchomp') {
 				spriteData.x = -2;
 				spriteData.y = 2;
-			} else if (id === 'garchompmega') {
+			} else if (id === 'garchomp-mega') {
 				spriteData.x = -2;
 				spriteData.y = 0;
 			}
@@ -862,11 +863,11 @@ const Dex = new class implements ModdedDex {
 		else if (gen <= 4 && species.gen <= 4) spriteData.spriteDir = 'sprites/gen4';
 		spriteData.x = 10;
 		spriteData.y = 5;
-		if (id == 'pigardoom' || id == 'magopop' || id == 'magopopmega' || id == 'gymbrock' || id == 'conchity' || id == 'ironjuan' || id == 'prendeporros' || id == 'prendeporrosmega' || id == 'pinkchariot' || id == 'trece' || id == 'trecemega' || id == 'gloovoo'
+		if (id == 'pigardoom' || id == 'magopop' || id == 'magopop-mega' || id == 'gymbrock' || id == 'conchity' || id == 'ironjuan' || id == 'prendeporros' || id == 'prendeporros-mega' || id == 'pinkchariot' || id == 'trece' || id == 'trece-mega' || name == 'gloovoo'
 		|| id == 'acerakion' || id == 'andyb' || id == 'badgyal' || id == 'lola' || id == 'dualipa' || id == 'michi' || id == 'punki' || id == 'naruto'
-		|| id == 'balat' || id == 'behel' || id == 'croqueto' || id == 'hyojinmaru' || id == 'jormungand' || id == 'jormungandmega' || id == 'mecadennis' || id == 'pikachudoubt' || id == 'nessie'|| id == 'yoloking' || id == 'yolokingmega' || id == 'rayguazas' || id == 'windu' || id == 'windumega' || id == 'nosferatu' || id == 'hobogoblin' || id == 'rocodromer' || id == 'agentesn' || id == 'charizardnt' || id == 'charizardntmega'
-		|| id == 'camilo' || id == 'camilomega' || id == 'crazycuac' || id == 'juanmagan' || id == 'tejero' || id == 'pringle' || id == 'chicote' || id == 'megachonk' || id == 'aitana'
-		|| id == 'pelele' || id == 'mogikarp' || id == 'goro' || id == 'algo' || id == 'jorginna' || id == 'patrisio' || id == 'acab' || id == 'adolf' || id == 'acabmega') {
+		|| id == 'balat' || id == 'behel' || id == 'croqueto' || id == 'hyojinmaru' || id == 'jormungand' || id == 'jormungand-mega' || id == 'mecadennis' || id == 'pikadont' || id == 'nessie'|| id == 'yoloking' || id == 'yoloking-mega' || id == 'rayguazas' || id == 'windu' || id == 'windu-mega' || id == 'nosferatu' || id == 'hobogoblin' || id == 'rocodromer' || id == 'agentesn' || id == 'charizardnt' || id == 'charizardnt-mega'
+		|| id == 'camilo' || id == 'camilo-mega' || id == 'crazycuac' || id == 'juanmagan' || id == 'tejero' || id == 'pringle' || id == 'chicote' || id == 'megachonk' || id == 'aitana'
+		|| id == 'pelele' || id == 'mogikarp' || id == 'goro' || id == 'algo' || id == 'jorginna' || id == 'patrisio' || id == 'acab' || id == 'adolf' || id == 'acab-mega') {
 			spriteData.spriteDir = 'teca-tc/';
 		}
 		return spriteData;
@@ -877,12 +878,12 @@ const Dex = new class implements ModdedDex {
 		let id = toID(pokemon.species);
 		const data = this.getTeambuilderSpriteData(pokemon, gen);
 		const shiny = (data.shiny ? '-shiny' : '');
-		if (id == 'pigardoom' || id == 'magopop' || id == 'magopopmega' || id == 'gymbrock' || id == 'conchity' || id == 'ironjuan' || id == 'prendeporros' || id == 'prendeporrosmega' || id == 'pinkchariot' || id == 'trece' || id == 'trecemega' || id == 'gloovoo'
+		if (id == 'pigardoom' || id == 'magopop' || id == 'magopop-mega' || id == 'gymbrock' || id == 'conchity' || id == 'ironjuan' || id == 'prendeporros' || id == 'prendeporros-mega' || id == 'pinkchariot' || id == 'trece' || id == 'trece-mega' || name == 'gloovoo'
 		|| id == 'acerakion' || id == 'andyb' || id == 'badgyal' || id == 'lola' || id == 'dualipa' || id == 'michi' || id == 'punki' || id == 'naruto'
-		|| id == 'balat' || id == 'behel' || id == 'croqueto' || id == 'hyojinmaru' || id == 'jormungand' || id == 'jormungandmega' || id == 'mecadennis' || id == 'pikachudoubt' || id == 'nessie'|| id == 'yoloking' || id == 'yolokingmega' || id == 'rayguazas' || id == 'windu' || id == 'windumega' || id == 'nosferatu' || id == 'hobogoblin' || id == 'rocodromer' || id == 'agentesn' || id == 'charizardnt' || id == 'charizardntmega'
-		|| id == 'camilo' || id == 'camilomega' || id == 'crazycuac' || id == 'juanmagan' || id == 'tejero' || id == 'pringle' || id == 'chicote' || id == 'megachonk' || id == 'aitana'
-		|| id == 'pelele' || id == 'mogikarp' || id == 'goro' || id == 'algo' || id == 'jorginna' || id == 'patrisio' || id == 'acab' || id == 'adolf' || id == 'acabmega'){
-			return 'background-image:url(http://192.168.0.19:80/sprites/teca-tc/'+id+'teambuilder.png);background-position:' + data.x + 'px ' + data.y + 'px;background-repeat:no-repeat';
+		|| id == 'balat' || id == 'behel' || id == 'croqueto' || id == 'hyojinmaru' || id == 'jormungand' || id == 'jormungand-mega' || id == 'mecadennis' || id == 'pikadont' || id == 'nessie'|| id == 'yoloking' || id == 'yoloking-mega' || id == 'rayguazas' || id == 'windu' || id == 'windu-mega' || id == 'nosferatu' || id == 'hobogoblin' || id == 'rocodromer' || id == 'agentesn' || id == 'charizardnt' || id == 'charizardnt-mega'
+		|| id == 'camilo' || id == 'camilo-mega' || id == 'crazycuac' || id == 'juanmagan' || id == 'tejero' || id == 'pringle' || id == 'chicote' || id == 'megachonk' || id == 'aitana'
+		|| id == 'pelele' || id == 'mogikarp' || id == 'goro' || id == 'algo' || id == 'jorginna' || id == 'patrisio' || id == 'acab' || id == 'adolf' || id == 'acab-mega'){
+			return 'background-image:url(http://82.165.3.33:80/sprites/teca-tc/'+id+'teambuilder.png);background-position:' + data.x + 'px ' + data.y + 'px;background-repeat:no-repeat';
 		}
 		return 'background-image:url(' + Dex.resourcePrefix + data.spriteDir + shiny + '/' + data.spriteid + '.png);background-position:' + data.x + 'px ' + data.y + 'px;background-repeat:no-repeat';
 	}
