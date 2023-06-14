@@ -756,7 +756,7 @@ const Dex = new class implements ModdedDex {
 		if (id === 'pinkchariot') id = 'sirfetchd';
 		if (id === 'trece') id = 'metagross';
 		if (id === 'trecemega') id = 'metagrossmega';
-		if (id === 'gloovoo') id = 'drifbloon';
+		if (id === 'gloovoo') id = 'drifloon';
 		if (id === 'michi') id = 'delcatty';
 		if (id === 'naruto') id = 'greninja';
 		if (id === 'lola') id = 'cinderace';
