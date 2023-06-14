@@ -675,7 +675,7 @@ const Dex = new class implements ModdedDex {
 		}
 
 		if (spriteData.isFrontSprite) {
-			if(name == 'pigardoom' || name == 'magopop' || name == 'magopopmega' || name == 'gymbrock' || name == 'conchity' || name == 'ironjuan' || name == 'prendeporros' || name == 'prendeporrosmega' || name == 'pinkchariot' || name == 'trece' || name == 'trecemega'
+			if(name == 'pigardoom' || name == 'magopop' || name == 'magopopmega' || name == 'gymbrock' || name == 'conchity' || name == 'ironjuan' || name == 'prendeporros' || name == 'prendeporrosmega' || name == 'pinkchariot' || name == 'trece' || name == 'trecemega' || name == 'gloovoo'
 			|| name == 'acerakion' || name == 'andyb' || name == 'badgyal' || name == 'lola' || name == 'dualipa' || name == 'michi' || name == 'punki' || name == 'naruto'
 			|| name == 'balat' || name == 'behel' || name == 'croqueto' || name == 'hyojinmaru' || name == 'jormungand' || name == 'jormungandmega' || name == 'mecadennis' || name == 'pikachudoubt' || name == 'nessie' 
 			|| name == 'yoloking' || name == 'yolokingmega' || name == 'rayguazas' || name == 'windu' || name == 'windumega' || name == 'nosferatu' || name == 'hobogoblin' || name == 'rocodromer' || name == 'agentesn' || name == 'charizardnt' || name == 'charizardontmega' 
@@ -687,7 +687,7 @@ const Dex = new class implements ModdedDex {
 			}
 		}
 		else{
-			if(name == 'pigardoom' || name == 'magopop' || name == 'magopopmega' || name == 'gymbrock' || name == 'conchity' || name == 'ironjuan' || name == 'prendeporros' || name == 'prendeporrosmega' || name == 'pinkchariot' || name == 'trece' || name == 'trecemega'
+			if(name == 'pigardoom' || name == 'magopop' || name == 'magopopmega' || name == 'gymbrock' || name == 'conchity' || name == 'ironjuan' || name == 'prendeporros' || name == 'prendeporrosmega' || name == 'pinkchariot' || name == 'trece' || name == 'trecemega' || name == 'gloovoo'
 			|| name == 'acerakion' || name == 'andyb' || name == 'badgyal' || name == 'lola' || name == 'dualipa' || name == 'michi' || name == 'punki' || name == 'naruto'
 			|| name == 'balat' || name == 'behel' || name == 'croqueto' || name == 'hyojinmaru' || name == 'jormungand' || name == 'jormungandmega' || name == 'mecadennis' || name == 'pikachudoubt' || name == 'nessie' 
 			|| name == 'yoloking' || name == 'yolokingmega' || name == 'rayguazas' || name == 'windu' || name == 'windumega' || name == 'nosferatu' || name == 'hobogoblin' || name == 'rocodromer' || name == 'agentesn' || name == 'charizardnt' || name == 'charizardontmega' 
@@ -756,6 +756,7 @@ const Dex = new class implements ModdedDex {
 		if (id === 'pinkchariot') id = 'sirfetchd';
 		if (id === 'trece') id = 'metagross';
 		if (id === 'trecemega') id = 'metagrossmega';
+		if (id === 'gloovoo') id = 'drifbloom';
 		if (id === 'michi') id = 'delcatty';
 		if (id === 'naruto') id = 'greninja';
 		if (id === 'lola') id = 'cinderace';
@@ -861,7 +862,7 @@ const Dex = new class implements ModdedDex {
 		else if (gen <= 4 && species.gen <= 4) spriteData.spriteDir = 'sprites/gen4';
 		spriteData.x = 10;
 		spriteData.y = 5;
-		if (id == 'pigardoom' || id == 'magopop' || id == 'magopopmega' || id == 'gymbrock' || id == 'conchity' || id == 'ironjuan' || id == 'prendeporros' || id == 'prendeporrosmega' || id == 'pinkchariot' || id == 'trece' || id == 'trecemega'
+		if (id == 'pigardoom' || id == 'magopop' || id == 'magopopmega' || id == 'gymbrock' || id == 'conchity' || id == 'ironjuan' || id == 'prendeporros' || id == 'prendeporrosmega' || id == 'pinkchariot' || id == 'trece' || id == 'trecemega' || id == 'gloovoo'
 		|| id == 'acerakion' || id == 'andyb' || id == 'badgyal' || id == 'lola' || id == 'dualipa' || id == 'michi' || id == 'punki' || id == 'naruto'
 		|| id == 'balat' || id == 'behel' || id == 'croqueto' || id == 'hyojinmaru' || id == 'jormungand' || id == 'jormungandmega' || id == 'mecadennis' || id == 'pikachudoubt' || id == 'nessie'|| id == 'yoloking' || id == 'yolokingmega' || id == 'rayguazas' || id == 'windu' || id == 'windumega' || id == 'nosferatu' || id == 'hobogoblin' || id == 'rocodromer' || id == 'agentesn' || id == 'charizardnt' || id == 'charizardntmega'
 		|| id == 'camilo' || id == 'camilomega' || id == 'crazycuac' || id == 'juanmagan' || id == 'tejero' || id == 'pringle' || id == 'chicote' || id == 'megachonk' || id == 'aitana'
@@ -876,7 +877,7 @@ const Dex = new class implements ModdedDex {
 		let id = toID(pokemon.species);
 		const data = this.getTeambuilderSpriteData(pokemon, gen);
 		const shiny = (data.shiny ? '-shiny' : '');
-		if (id == 'pigardoom' || id == 'magopop' || id == 'magopopmega' || id == 'gymbrock' || id == 'conchity' || id == 'ironjuan' || id == 'prendeporros' || id == 'prendeporrosmega' || id == 'pinkchariot' || id == 'trece' || id == 'trecemega'
+		if (id == 'pigardoom' || id == 'magopop' || id == 'magopopmega' || id == 'gymbrock' || id == 'conchity' || id == 'ironjuan' || id == 'prendeporros' || id == 'prendeporrosmega' || id == 'pinkchariot' || id == 'trece' || id == 'trecemega' || id == 'gloovoo'
 		|| id == 'acerakion' || id == 'andyb' || id == 'badgyal' || id == 'lola' || id == 'dualipa' || id == 'michi' || id == 'punki' || id == 'naruto'
 		|| id == 'balat' || id == 'behel' || id == 'croqueto' || id == 'hyojinmaru' || id == 'jormungand' || id == 'jormungandmega' || id == 'mecadennis' || id == 'pikachudoubt' || id == 'nessie'|| id == 'yoloking' || id == 'yolokingmega' || id == 'rayguazas' || id == 'windu' || id == 'windumega' || id == 'nosferatu' || id == 'hobogoblin' || id == 'rocodromer' || id == 'agentesn' || id == 'charizardnt' || id == 'charizardntmega'
 		|| id == 'camilo' || id == 'camilomega' || id == 'crazycuac' || id == 'juanmagan' || id == 'tejero' || id == 'pringle' || id == 'chicote' || id == 'megachonk' || id == 'aitana'
