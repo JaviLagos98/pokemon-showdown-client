@@ -3,6 +3,7 @@
 /audio/
 /config/*
 !/config/src/battle-dex.ts
+!config/testclient-key.js
 /index.php
 /index.html
 /preactalpha.html
