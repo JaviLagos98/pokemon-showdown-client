@@ -797,7 +797,7 @@ const Dex = new class implements ModdedDex {
 		if (id === 'megachonk') id = 'slaking';
 		if (id === 'aitana') id = 'groudon';
 		if (id === 'mogikarp') id = 'gyarados';
-		if (id === 'aitanamega') id = 'groudonmega';
+		if (id === 'aitanamega') id = 'groudonprimal';
 		if (id === 'goro') id = 'snorlax';
 		if (id === 'algo') id = 'volcarona';
 		if (id === 'jorginna') id = 'torterra';
