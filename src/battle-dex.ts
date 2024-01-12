@@ -681,13 +681,13 @@ const Dex = new class implements ModdedDex {
 				spriteData.y += -11;
 			}
 			if(species.num > 10000) {
-				spriteData.url = 'http://192.168.0.42:81/sprites/teca-tc/'+name+'.png';
+				spriteData.url = 'http://82.165.3.33:80/sprites/teca-tc/'+name+'.png';
 				return spriteData;
 			}
 		}
 		else{
 			if(species.num > 10000) {
-				spriteData.url = 'http://192.168.0.42:81/sprites/teca-tc/'+name+'back.png';
+				spriteData.url = 'http://82.165.3.33:80/sprites/teca-tc/'+name+'back.png';
 				return spriteData;
 			}
 		}
@@ -813,7 +813,7 @@ const Dex = new class implements ModdedDex {
 		let species = id? Dex.species.get(id) : null;
 		let customsprite = species?.num ? species.num > 10000 : null;
 		if (customsprite){
-			return 'background-image:url(http://192.168.0.42:81/sprites/teca-tc/'+id+'.png); background-size: auto 40px; background-position: 0px -5px; ' + fainted + '; background-repeat:no-repeat;';
+			return 'background-image:url(http://82.165.3.33:80/sprites/teca-tc/'+id+'.png); background-size: auto 40px; background-position: 0px -5px; ' + fainted + '; background-repeat:no-repeat;';
 		}
 		return `background:transparent url(${Dex.resourcePrefix}sprites/pokemonicons-sheet.png?v12) no-repeat scroll -${left}px -${top}px${fainted}`;
 	}
@@ -875,7 +875,7 @@ const Dex = new class implements ModdedDex {
 		const shiny = (data.shiny ? '-shiny' : '');
 		let species = Dex.species.get(pokemon.species)
 		if (species.num > 10000){
-			return 'background-image:url(http://192.168.0.42:81/sprites/teca-tc/'+id+'.png); background-size: auto 90px; background-position: 10px 10px; background-repeat:no-repeat';
+			return 'background-image:url(http://82.165.3.33:80/sprites/teca-tc/'+id+'.png); background-size: auto 90px; background-position: 10px 10px; background-repeat:no-repeat';
 		}
 		return 'background-image:url(' + Dex.resourcePrefix + data.spriteDir + shiny + '/' + data.spriteid + species.num + '.png);background-position:' + data.x + 'px ' + data.y + 'px;background-repeat:no-repeat';
 	}
