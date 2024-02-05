@@ -680,13 +680,13 @@ const Dex = new class implements ModdedDex {
 				spriteData.h *= 1.5;
 				spriteData.y += -11;
 			}
-			if(species.num > 10000) {
+			if(species.num >= 10000) {
 				spriteData.url = 'http://82.165.3.33:80/sprites/teca-tc/'+name+'.png';
 				return spriteData;
 			}
 		}
 		else{
-			if(species.num > 10000) {
+			if(species.num >= 10000) {
 				spriteData.url = 'http://82.165.3.33:80/sprites/teca-tc/'+name+'back.png';
 				return spriteData;
 			}
@@ -811,7 +811,7 @@ const Dex = new class implements ModdedDex {
 		let left = (num % 12) * 40;
 		let fainted = ((pokemon as Pokemon | ServerPokemon)?.fainted ? `;opacity:.3;filter:grayscale(100%) brightness(.5)` : ``);
 		let species = id? Dex.species.get(id) : null;
-		let customsprite = species?.num ? species.num > 10000 : null;
+		let customsprite = species?.num ? species.num >= 10000 : null;
 		if (customsprite){
 			return 'background-image:url(http://82.165.3.33:80/sprites/teca-tc/'+id+'.png); background-size: auto 40px; background-position: 0px -5px; ' + fainted + '; background-repeat:no-repeat;';
 		}
@@ -862,7 +862,7 @@ const Dex = new class implements ModdedDex {
 		else if (gen <= 4 && species.gen <= 4) spriteData.spriteDir = 'sprites/gen4';
 		spriteData.x = 10;
 		spriteData.y = 5;
-		if (species.num > 10000) {
+		if (species.num >= 10000) {
 			spriteData.spriteDir = 'teca-tc/';
 		}
 		return spriteData;
@@ -874,7 +874,7 @@ const Dex = new class implements ModdedDex {
 		const data = this.getTeambuilderSpriteData(pokemon, gen);
 		const shiny = (data.shiny ? '-shiny' : '');
 		let species = Dex.species.get(pokemon.species)
-		if (species.num > 10000){
+		if (species.num >= 10000){
 			return 'background-image:url(http://82.165.3.33:80/sprites/teca-tc/'+id+'.png); background-size: auto 90px; background-position: 10px 10px; background-repeat:no-repeat';
 		}
 		return 'background-image:url(' + Dex.resourcePrefix + data.spriteDir + shiny + '/' + data.spriteid + species.num + '.png);background-position:' + data.x + 'px ' + data.y + 'px;background-repeat:no-repeat';
